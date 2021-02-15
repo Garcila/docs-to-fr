@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+header nav a {
+  font-family: 'Parisienne', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-left: 5px;
+  background-color: #1b1a1a;
+  border-color: #1b1a1a;
+  max-height: 1.5rem;
+}
+
+.correct {
+  transform: scale(0.01);
+}
+.hide {
+  display: none;
+}
