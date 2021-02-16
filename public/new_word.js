@@ -11,7 +11,6 @@ const nous = document.getElementById('nous');
 const vous = document.getElementById('vous');
 const ills_elles = document.getElementById('ills_elles');
 
-// const allItems = [fin, ajouter, je, tu, ill_elle, nous, vous, ills_elles];
 const form = document.querySelector('form');
 
 form.addEventListener('submit', handleFormSubmit);
@@ -34,58 +33,3 @@ async function handleFormSubmit(e) {
 
   await API.addWord('/api/add', newWord);
 }
-// const formData = new FormData(e.target);
-// const newWord = {
-//   classe: formData.get('classe'),
-//   mot: formData.get('mot'),
-//   groupe: formData.get('groupe'),
-//   fin: formData.get('fin'),
-//   ajouter: formData.get('ajouter'),
-//   je: formData.get('je'),
-//   tu: formData.get('tu'),
-//   ill_elle: formData.get('ill_elle'),
-//   nous: formData.get('nous'),
-//   vous: formData.get('vous'),
-//   ills_elles: formData.get('ills_elles'),
-// };
-//   init(newWord);
-// });
-
-// async function init(newWord) {
-// document.querySelector('form').addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   const formData = new FormData(e.target);
-//   const newWord = {
-//     classe: formData.get('classe'),
-//     mot: formData.get('mot'),
-//     groupe: formData.get('groupe'),
-//     fin: formData.get('fin'),
-//     ajouter: formData.get('ajouter'),
-//     je: formData.get('je'),
-//     tu: formData.get('tu'),
-//     ill_elle: formData.get('ill_elle'),
-//     nous: formData.get('nous'),
-//     vous: formData.get('vous'),
-//     ills_elles: formData.get('ills_elles'),
-//   };
-// await API.addWord(newWord);
-// }
-// });
-// const word = await API.getRandomWord();
-// console.log(word);
-// wordH2.textContent = word.mot;
-// checkInputs(word);
-// }
-
-// function checkInputs(word) {
-//   groupe.addEventListener('keyup', function (e) {
-//     groupe.style.backgroundColor =
-//       word.groupe === parseInt(e.target.value) ? 'green' : 'red';
-//   });
-//   allItems.forEach((item) => {
-//     item.addEventListener('keyup', (e) => {
-//       const name = e.target.name;
-//       item.style.backgroundColor = word[name] === e.target.value ? 'green' : 'red';
-//     });
-//   });
-// }

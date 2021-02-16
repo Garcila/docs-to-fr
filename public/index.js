@@ -26,12 +26,13 @@ async function init() {
 function checkInputs(word) {
   groupe.addEventListener('keyup', function (e) {
     groupe.style.backgroundColor =
-      word.groupe === parseInt(e.target.value) ? 'green' : 'red';
+      word.groupe === parseInt(e.target.value) ? 'darkolivegreen' : 'darkred';
   });
   allItems.forEach((item) => {
     item.addEventListener('keyup', (e) => {
       const name = e.target.name;
-      item.style.backgroundColor = word[name] === e.target.value ? 'green' : 'red';
+      item.style.backgroundColor =
+        word[name] === e.target.value ? 'darkolivegreen' : 'darkred';
     });
   });
 }
